@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import Item from "../../views/item/item"
 import './news.css';
 class state extends Component {
     render() {
@@ -10,10 +10,8 @@ class state extends Component {
                     {
                         this.props.item.stories.map((item) => {
                             return (
-                                <Link to={`/detail/${item.id}`} key={item.id}>
-                                    <p>{item.title}</p>
-                                    <img src={item.images} alt="" />
-                                </Link>
+                                <Item key={item.id} item={item}></Item>
+                                
                             )
                         })
                     }

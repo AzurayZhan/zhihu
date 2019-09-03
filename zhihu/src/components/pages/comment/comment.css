@@ -1,0 +1,67 @@
+.comments{
+    margin-top: 1rem;
+}
+.contents{
+    width: 100%;
+}
+.contents .c-head{
+    height: 0.8rem;
+    border-bottom: 1px solid #cccccc;
+    font-size: 0.24rem;
+    color: #333333;
+    line-height: 0.8rem;
+    padding: 0 0.2rem;
+}
+.c-head .num{
+    width: 80%; 
+    float: left;
+}
+.c-head .down{
+    float: right;
+}
+.noLong{
+    width: 100%;
+    height: 10.2rem;
+    border-bottom: 1px solid #cccccc;
+    font-size: 0.3rem;
+    text-align: center;
+    line-height: 10.2rem;
+}
+#short-comment{
+    display: none
+}
+/* .comment-list{
+    width: 100%;    
+    padding: 0.2rem;
+    border-bottom: 1px solid #cccccc;
+    display: flex
+}
+.list-left{
+    width: 0.6rem;
+    margin-right: 0.2rem;
+}
+.list-left img{
+    vertical-align: top;
+    width: 0.6rem;
+    border-radius: 50%;
+}
+.list-right{
+    flex: 1 
+}
+.comment-list h4{
+    font-size: 0.3rem;
+    font-weight: bold;
+    line-height: 0.6rem;
+}
+.comment-list span {
+    width: 1rem;
+    display: block;
+    color: #666666;
+    float: right;
+    font-weight: normal;
+}
+.comment-list .list-content{
+    line-height: 0.4rem;
+    font-size: 0.3rem;
+    color: #333333
+} */

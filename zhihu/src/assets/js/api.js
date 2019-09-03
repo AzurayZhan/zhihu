@@ -1,10 +1,12 @@
 const Article ="/news/latest"
-const Before = "/news/before"
+const Before = "/news/before/"
 const Detail = "/news/"
-const Comments = "/story-extra/"
+const Info = "/story-extra/"
+const Comments="/story/"
 export default {
     Article,
     Detail,
     Before,
+    Info,
     Comments
 }

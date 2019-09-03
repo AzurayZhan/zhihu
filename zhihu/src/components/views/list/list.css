@@ -1,0 +1,36 @@
+.comment-list{
+    width: 100%;    
+    padding: 0.2rem;
+    border-bottom: 1px solid #cccccc;
+    display: flex
+}
+.list-left{
+    width: 0.6rem;
+    margin-right: 0.2rem;
+}
+.list-left img{
+    vertical-align: top;
+    width: 0.6rem;
+    border-radius: 50%;
+}
+.list-right{
+    flex: 1; 
+}
+.comment-list h4{
+    width: 6rem;
+    font-size: 0.3rem;
+    font-weight: bold;
+    line-height: 0.6rem;
+}
+.comment-list span {
+    width: 1rem;
+    display: block;
+    color: #666666;
+    float: right;
+    font-weight: normal;
+}
+.list-content p{
+    line-height: 0.4rem;
+    font-size: 0.3rem;
+    color: #333333;
+}

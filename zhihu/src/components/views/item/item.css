@@ -1,0 +1,23 @@
+.news-list a{
+    display: block;
+    height: 2.45rem;
+    padding: 0.2rem;
+    margin-bottom: 0.2rem;
+    background: #fff;
+    border-radius: 0.1rem;
+    box-shadow: 0.02rem 0.02rem 0.1rem #cccccc
+}
+.news-list a p{
+    float: left;
+    width: 3.6rem;
+    margin-right: 0.2rem;
+    line-height: 0.4rem;
+    font-size: 0.3rem;
+    text-align: justify;
+    color: #333333
+}
+.news-list img{
+    float: right;
+    width: 2.48rem;
+    height: 2.08rem;
+}

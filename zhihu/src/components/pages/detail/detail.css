@@ -1,3 +1,6 @@
+.box{
+    position: relative;
+}
 .header{
     position: fixed;
     left: 0;
@@ -6,47 +9,48 @@
     width: 100vw;
     height: 1rem;
     background: #00A2Ed;
-    padding: 0 0.5rem;
+    padding: 0 0.3rem;
     line-height: 1rem;;
     color: #ffffff;
-    font-size: 0.46rem;
+    font-size: 0.36rem;
 }
-.header div{
-    height: 1rem;;
-    line-height:1rem;;
+.header .left{
+    float: left;
+}
+.left .anticon{
+    padding-left: 0
+}
+.header span{
+    padding-left: 0.3rem;
+}
+.header .right{
     float: right;
 }
-.header .anticon{
+.right .star{
     color: #ffffff;
     padding-left: 0.3rem;
     /* display: inline-block; */
 }
-.anticon-menu,.anticon-arrow-left{
-    padding-left: 0;
+.right .ystar{
+    color: yellow;
+    padding-left: 0.3rem;
 }
-.icon b{
-    font-size: 0.36rem;
+.right b{   
+    font-size: 0.34rem;
     font-weight: normal;
     color: #fff;
+    line-height: 1rem;
 }
 .headImg img{
     width: 100%;
     height: 2rem;
 }
-.mask{
-    display: none;
-    position: fixed;
-    z-index: 5;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.2)
-}
-.cover{
+.title{
     position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 5rem;
-    height: 5rem;
-    background: #fff;
-    transform: translate(-50%,-50%)
+    width: 100%;
+    height: 200px;
+}
+.title img{
+    width: 100%;
+    height: 200px;
 }
