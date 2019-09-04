@@ -16,7 +16,8 @@ class state extends Component {
 				title:"",
 				stories:[]
 			} */
-        ]
+        ],
+        isShow:false
     }
 
     componentDidMount() {
@@ -24,7 +25,7 @@ class state extends Component {
             url: API.Article,
             method: "get",
         }).then(d => {
-            console.log(d)
+            // console.log(d)
             let stories = d.data.stories;
             let news = this.state.news;
             news.push({
@@ -111,12 +112,17 @@ class state extends Component {
             })
         })
     }
-    show() {
-        
+    toHidden(i){
+        this.setState({
+            isShow:i
+        })
     }
-    /* collect(){
-        this.props.history.push("/collect")
-    } */
+    show() {
+        this.setState({
+           isShow:!this.state.isShow
+        })
+    }
+
     componentWillUnmount() {
         window.onscroll = null;
     }
@@ -127,7 +133,7 @@ class state extends Component {
                     <div className="header" ref="header">
                         <div className="left">
                             <Icon type="menu" onTouchEnd={() => this.show()} />
-                            <span ref="title">首页</span>
+                            <span ref="title" >首页</span>
                         </div>
 
                         <div className="right">
@@ -156,8 +162,12 @@ class state extends Component {
                             })
                         }
                     </div>
-                </div>
-                <Mask></Mask>
+                </div>  
+                {
+                    this.state.isShow?<Mask history={this.props.history} 
+                    onChangeShow={()=>this.toHidden(false)}>
+                    </Mask>:""
+                }
             </div>
         )
     }

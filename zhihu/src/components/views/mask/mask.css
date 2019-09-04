@@ -2,16 +2,21 @@
     width: 100vw;
     height: 100vh;
     position: fixed;
-    left: 0;
+    /* left: -100%; */
     top: 0;
     z-index: 5;
-    background: rgba(0, 0, 0, .5);
-    /* display: none */
+    background: rgba(0, 0, 0, .5); 
+    touch-action: none;
+}
+.hidden{
+    display: none
 }
 .info{
     width: 80%;
     height: 100vh;
     background: #fff;
+    margin-left: -80%;
+    animation: move 0.3s forwards
 }
 .top{
     width: 100%;
@@ -55,4 +60,11 @@
 }
 .home .anticon{
     padding: 0 .4rem;
+}
+@keyframes move{
+    0%{
+        margin-left: -80%    }
+    100%{
+        margin-left: 0
+    }
 }
